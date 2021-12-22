@@ -7,23 +7,22 @@
     <title>Hustbee</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
 </head>
 
 <body>
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="relative bg-secondary-1100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-                <div class="flex justify-start lg:w-0 lg:flex-1">
+            <div class="flex justify-between items-center py-6 lg:justify-start">
+                <div class="flex justify-start lg:w-32">
                     <a href="#">
                         <span class="sr-only">Workflow</span>
-                        <img class="h-10 w-auto md:h-7" src="/public/img/logo.svg" alt="">
+                        <img class="h-10 w-auto lg:h-7" src="/public/img/logo.svg" alt="">
                     </a>
                 </div>
-                <div class="-mr-2 -my-2 md:hidden">
+                <div class="-mr-2 -my-2 lg:hidden">
                     <button type="button"
-                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        class="bg-white rounded-lg p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                         aria-expanded="false">
                         <span class="sr-only">Open menu</span>
                         <!-- Heroicon name: outline/menu -->
@@ -34,7 +33,7 @@
                         </svg>
                     </button>
                 </div>
-                <nav class="hidden md:flex space-x-12">
+                <nav class="hidden lg:flex m-auto lg:space-x-10">
                     <a href="#" class="text-white font-normal">
                         Light Header
                     </a>
@@ -44,7 +43,7 @@
                             <span>Hosting Services</span>
                         </button>
                         <div  id="dropdown" aria-labelledby="dropdownButton"
-                            class="hidden  absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                            class="hidden absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-lg sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                             <div class="rounded-lg shadow-lg overflow-hidden bg-primary-100">
                                 <div class="relative grid grid-cols-2 p-4 border-b border-secondary-500">
                                     <a href="#"
@@ -107,9 +106,6 @@
                         </div>
                     </div>
 
-                    <!-- <a href="#" class="text-white font-normal">
-                        Hosting Services
-                    </a> -->
                     <a href="#" class="text-white font-normal">
                         Domains
                     </a>
@@ -118,11 +114,25 @@
                         Support
                     </a>
 
-                    <a href="#" class="text-white font-normal">
-                        Pages
-                    </a>
+                    <div class="relative">
+                        <button type="button" class=" border-secondary-900 text-white font-normal opacity-80" id="pagesdropdownButton" data-dropdown-toggle="pagesdropdown">
+                            <span>Pages</span>
+                        </button>
+                        <div  id="pagesdropdown" aria-labelledby="pagesdropdownButton"
+                            class="hidden absolute z-10 -ml-4 mt-3 transform px-2 w-36 sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                            <div class="rounded-lg shadow-lg overflow-hidden bg-primary-100">
+                                <div class="relative">
+                                    <ul class="py-1.5">
+                                        <li><a class="text-secondary-1100 text-sm font-light py-0.5 px-5">About</a></li>
+                                        <li><a class="text-secondary-1100 text-sm font-light py-0.5 px-5">Blog</a></li>
+                                        <li><a class="text-secondary-1100 text-sm font-light py-0.5 px-5">Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
-                <div class="hidden md:flex items-center justify-end md:flex-row">
+                <div class="hidden lg:flex items-center justify-end lg:flex-row">
                     <div>
                         <a href="#"
                             class="whitespace-nowrap text-secondary-100 font-normal text-sm flex mb-1.5 bg-secondary-900 hover:bg-secondary-1000 duration-75 ease-in rounded-full py-0.5 px-5">
@@ -132,14 +142,14 @@
                                 class="fas fa-arrow-right text-primary-800 mr-1.5"></i>Chat Available</div>
                     </div>
                     <a href="#"
-                        class="ml-8 flex items-center justify-center rounded-md h-12 w-12 text-white bg-primary-800 hover:bg-primary-700">
+                        class="ml-8 flex items-center justify-center rounded-lg h-12 w-12 text-white bg-primary-800 hover:bg-primary-700">
                         <i class="fa-regular fa-comments fa-lg"></i>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden">
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div class="pt-5 pb-6 px-5">
                     <div class="flex items-center justify-between">
@@ -149,7 +159,7 @@
                         </div>
                         <div class="-mr-2">
                             <button type="button"
-                                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                class="bg-white rounded-lg p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                                 <span class="sr-only">Close menu</span>
                                 <!-- Heroicon name: outline/x -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -162,7 +172,7 @@
                     </div>
                     <div class="mt-6">
                         <nav class="grid gap-y-8">
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                                 <!-- Heroicon name: outline/chart-bar -->
                                 <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -174,7 +184,7 @@
                                 </span>
                             </a>
 
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                                 <!-- Heroicon name: outline/cursor-click -->
                                 <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -186,7 +196,7 @@
                                 </span>
                             </a>
 
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                                 <!-- Heroicon name: outline/shield-check -->
                                 <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -198,7 +208,7 @@
                                 </span>
                             </a>
 
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                                 <!-- Heroicon name: outline/view-grid -->
                                 <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -210,7 +220,7 @@
                                 </span>
                             </a>
 
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                                 <!-- Heroicon name: outline/refresh -->
                                 <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -252,7 +262,7 @@
                     </div>
                     <div>
                         <a href="#"
-                            class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                            class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
                             Sign up
                         </a>
                         <p class="mt-6 text-center text-base font-medium text-gray-500">

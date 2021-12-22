@@ -628,16 +628,6 @@ input[type=file]::file-selector-button:hover{
   background: #4B5563;
 }
 
-[role="tab"].active,[role="tab"].active:hover{
-  color: #1C64F2;
-  border-color: #1C64F2;
-}
-
-.dark [role="tab"].active,.dark [role="tab"].active:hover{
-  color: #1C64F2;
-  border-color: #1C64F2;
-}
-
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -692,6 +682,10 @@ input[type=file]::file-selector-button:hover{
 
 .top-auto{
   top: auto;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .z-10{
@@ -758,10 +752,6 @@ input[type=file]::file-selector-button:hover{
 
 .ml-8{
   margin-left: 2rem;
-}
-
-.block{
-  display: block;
 }
 
 .flex{

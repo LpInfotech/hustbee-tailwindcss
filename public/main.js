@@ -27,7 +27,7 @@ $(document).ready(function (e) {
     });
 });
 // mobile dropdowm menu //
-
+$(document).ready(function () {
 $('.main-slider').slick({
     infinite: true,
     speed: 1000,
@@ -38,4 +38,5 @@ $('.main-slider').slick({
     dots: true,
     arrows: false,
     fade: true
+});
 });

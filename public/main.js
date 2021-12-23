@@ -27,3 +27,15 @@ $(document).ready(function (e) {
     });
 });
 // mobile dropdowm menu //
+
+$('.main-slider').slick({
+    infinite: true,
+    speed: 1000,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    fade: true
+});
